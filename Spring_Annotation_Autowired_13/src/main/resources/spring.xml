@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<bean id="c" class="com.chandra.spring.Circle">
+		<!-- <property name="point" ref="point2" /> -->
+	</bean>
+
+	<bean id="point1" class="com.chandra.spring.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	<bean id="point2" class="com.chandra.spring.Point">
+		<property name="x" value="10" />
+		<property name="y" value="20" />
+	</bean>
+	<bean id="point3" class="com.chandra.spring.Point">
+		<property name="x" value="30" />
+		<property name="y" value="40" />
+	</bean>
+
+	<bean class="com.chandra.spring.Car">
+		<!-- <property name="color" value="Green" /> -->
+	</bean>
+</beans>
