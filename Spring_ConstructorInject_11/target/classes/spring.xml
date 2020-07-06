@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="triangle" class="com.chandra.spring.Triangle">
+		<constructor-arg index="0" ref="pointA" />
+		<constructor-arg index="1" ref="pointB" />
+		<constructor-arg index="2" ref="pointC" />
+	</bean>
+	<bean id="pointA" class="com.chandra.spring.Point">
+		<constructor-arg index="0" value="0" />
+		<constructor-arg index="1" value="0" />
+	</bean>
+	<bean id="pointB" class="com.chandra.spring.Point">
+		<constructor-arg index="0" value="10" />
+		<constructor-arg index="1" value="20" />
+	</bean>
+	<bean id="pointC" class="com.chandra.spring.Point">
+		<constructor-arg index="0" value="30" />
+		<constructor-arg index="1" value="40" />
+	</bean>
+</beans>
